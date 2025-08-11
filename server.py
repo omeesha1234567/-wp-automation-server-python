@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Twilio credentials from environment variables
 ACCOUNT_SID = os.environ.get("ACCOUNT_SID")
 AUTH_TOKEN = os.environ.get("AUTH_TOKEN")
-TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"  # Twilio sandbox number
+TWILIO_WHATSAPP_NUMBER = "whatsapp:+17756407218"  # Twilio sandbox number
 
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
@@ -51,3 +51,4 @@ def whatsapp_webhook():
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
+
