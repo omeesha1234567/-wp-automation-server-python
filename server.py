@@ -13,7 +13,7 @@ TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"  # Twilio sandbox number
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
 # Flowise API endpoint (replace with your actual endpoint)
-FLOWISE_API_URL = "http://localhost:3000/api/v1/prediction/your_agent_id"
+FLOWISE_API_URL = "http://localhost:3000/api/v1/prediction/22651084-3a38-411e-b06a-564fe65f12e8"
 
 @app.route("/whatsapp", methods=["POST"])
 def whatsapp_webhook():
@@ -40,3 +40,4 @@ def whatsapp_webhook():
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
+
